@@ -1,0 +1,39 @@
+/* style.css */
+
+#title::before{
+    width: 0px;
+}
+
+#canvas_container{
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+#uis_and_contents {
+    display: flex;
+    width: 1600px;
+    border-width: 0px;
+    border-style: solid;
+}
+
+#uis {
+    display: flex;
+    width: 400px;
+    height: 800px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+
+#contents {
+    display: flex;
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkblue;
+}

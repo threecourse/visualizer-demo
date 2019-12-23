@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>visualizer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="{{ static_url('css/style.css') }}">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script> var exports = {}; </script>
+    <script type="text/javascript" src="{{ static_url('_js/bundle.js') }}"></script>
+</head>
+<body>
+
+<div class="ui menu">
+    <div id="title" class="item">
+        <h1>visualizer</h1>
+    </div>
+</div>
+
+<div id="uis_and_contents">
+
+    <div id="uis">
+        <div class="ui form">
+
+            <div class="inline fields">
+                <div class="six wide field">
+                    <button id="loadButton" class="ui primary button"><i class="upload icon"></i>load</button>
+                </div>
+
+                <div class="field">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            seed
+                        </div>
+                        <input id="seedInput" type="number" value="20"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline fields">
+                <div class="eight wide field">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            steps
+                        </div>
+                        <input id="seekNumber" type="number"/>
+                    </div>
+
+                </div>
+                <div class="twelve wide field">
+                    <input id="seekRange" type="range"/>
+                </div>
+            </div>
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui buttons">
+                        <button id="firstButton" class="ui button"><i class="fast backward icon"></i></button>
+                        <button id="prevButton" class="ui button"><i class="step backward icon"></i></button>
+                        <button id="playButton" class="ui primary button"><i id="runIcon" class="play icon"></i>
+                        </button>
+                        <button id="nextButton" class="ui button"><i class="step forward icon"></i></button>
+                        <button id="lastButton" class="ui button"><i class="fast forward icon"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui labeled input">
+                        <input id="fpsInput" type="number" value="20"/>
+                        <div class="ui label">
+                            fps
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filler" style="height: 60px;"></div>
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui labeled input" style="pointer-events: none">
+                        <div class="ui label">
+                            score
+                        </div>
+                        <input id="scoreDisplay" type="number" value="0"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contents">
+        <div id="canvas_container">
+            <canvas id="canvas" style="border: black solid 1px;"></canvas>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
