@@ -35,6 +35,10 @@ npm install d3 @types/d3
 npm install jquery @types/jquery
 ```
 
+### demo
+
+![demo](media/visualizer20191221.gif)
+
 ### license
 
 * MIT License
