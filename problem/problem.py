@@ -41,7 +41,7 @@ class Problem:
 
         for i in range(step):
             cells[y, x] = '.'
-            if rand.random() < 0.33:
+            if rand.rand() < 0.33:
                 if rand.randint(H + W) < H:
                     dir = 0 + rand.randint(2)
                 else:
