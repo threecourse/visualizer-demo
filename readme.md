@@ -37,7 +37,7 @@ npm install jquery @types/jquery
 
 ### demo
 
-![demo](media/visualizer20191221.gif =450x250)
+<img src="media/visualizer20191221.gif" width="450" height="250" />
 
 ### license
 
