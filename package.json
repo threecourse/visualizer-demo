@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/jquery": "^3.3.31",
     "d3": "^5.14.2",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "ts-loader": "^6.2.1",
